@@ -18,11 +18,6 @@ export default function Post({ postData }) {
       <br />
       <Date dateString={postData.date} />
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      <h4>
-        <Link href='/'>
-          <a>Back to home</a>
-        </Link>
-      </h4>
     </Layout>
   );
 }
